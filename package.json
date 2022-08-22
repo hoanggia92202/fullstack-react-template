@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "build": "npx webpack --config webpack.production.config.js",
-    "dev": "concurrently --kill-others \"nodemon start\" \"npx webpack serve --config webpack.dev.config.js --hot\""
+    "dev": "concurrently --kill-others \"nodemon --delay 500ms start\" \"npx webpack serve --config webpack.dev.config.js --hot\""
   },
   "author": "",
   "license": "ISC",
